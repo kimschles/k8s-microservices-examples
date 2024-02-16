@@ -1,0 +1,59 @@
+{
+    "Intermediate Level Kubernetes Learning Resources": {
+        "LinkedIn Learning Courses": [
+            {
+                "id": 101,
+                "title": "Advanced Kubernetes: 1 Core Concepts",
+                "author": "Matt Turner",
+                "link": "https://www.linkedin.com/learning/advanced-kubernetes-1-core-concepts",
+                "image_url": "https://media.licdn.com/dms/image/D4D12AQHvHqpBJjdXPA/article-cover_image-shrink_720_1280/0/1689923773716?e=2147483647&v=beta&t=ruYcJ9AT_ayZeoz3kE53mG4X7UlcUMboNNJyoID4bZo"
+            },
+            {
+                "id": 102,
+                "title": "Securing Containers and Kubernetes Ecosystem",
+                "author": "Sam Sehgal",
+                "link": "https://www.linkedin.com/learning/securing-containers-and-kubernetes-ecosystem",
+                "image_url": "https://www.oreilly.com/library/cover/9781492092292/1200w630h/"
+            }
+        ],
+        "Books": [
+            {
+                "id": 103,
+                "title": "Networking and Kubernetes",
+                "author": "James Strong and Vallery Lancey",
+                "link": "https://www.oreilly.com/library/view/networking-and-kubernetes/9781492081647/",
+                "image_url": "https://www.oreilly.com/library/cover/9781492081647/1200w630h/"
+            },
+            {
+                "id": 104,
+                "title": "Production Kubernetes",
+                "author": "Josh Rosso, Rich Lander, Alex Brand, and John Harris",
+                "link": "https://tanzu.vmware.com/content/ebooks/production-kubernetes",
+                "image_url": "https://www.oreilly.com/library/cover/9781492092292/1200w630h/"
+            }
+        ],
+        "Videos on Kubernetes Networking": [
+            {
+                "id": 105,
+                "title": "Kubernetes Networking 101",
+                "author": "Randy Abernethy",
+                "link": "https://www.youtube.com/watch?v=cUGXu2tiZMc",
+                "image_url": "https://i.ytimg.com/an_webp/cUGXu2tiZMc/mqdefault_6s.webp?du=3000&sqp=CKq0vq4G&rs=AOn4CLBkPWUeOs87zZH3pYfcxvwouY_VIg"
+            },
+            {
+                "id": 106,
+                "title": "Pods and Containers - Kubernetes Networking | Container Communication inside the Pod",
+                "author": "TechWorld with Nana",
+                "link": "https://www.youtube.com/watch?v=5cNrTU6o3Fw",
+                "image_url": "https://yt3.googleusercontent.com/kXyR8Aa32KXnZWVdkAFUYK5utM752kSJPHGtYiJ4ev6BmdFHi-dl1EFbI3TogmHBjszwc7m2=s176-c-k-c0x00ffffff-no-rj"
+            },
+            {
+                "id": 107,
+                "title": "Tutorial: Communication Is Key - Understanding Kubernetes Networking",
+                "author": "Jeff Poole",
+                "link": "https://www.youtube.com/watch?v=InZVNuKY5GY",
+                "image_url": "https://i.ytimg.com/vi/InZVNuKY5GY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCNB57vVYMR4ci6cb9q__7AX38b1Q"
+            }
+        ]
+    }
+}
