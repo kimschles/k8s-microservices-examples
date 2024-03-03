@@ -8,11 +8,11 @@ require('dotenv').config();
 
 app.use(cors())
 
-app.get('/', (req, res) => {
+app.get('/', cors(), (req, res) => {
     res.json(data)
 })
 
-app.get('/info', (req, res) => {
+app.get('/info', cors(), (req, res) => {
     res.json({
         "pod_name": process.env.POD_NAME,
         "pod_ip": process.env.POD_IP,
@@ -20,7 +20,7 @@ app.get('/info', (req, res) => {
     })
 })
 
-app.get('/healthz', (req, res) => {
+app.get('/healthz', cors(), (req, res) => {
     res.send('ok')
 })
 
