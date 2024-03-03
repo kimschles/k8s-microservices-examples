@@ -1,0 +1,17 @@
+FROM node:21-alpine
+
+WORKDIR /usr/src/app
+
+COPY svelte.config.js ./
+COPY vite.config.js ./
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+
+EXPOSE 5173
+
+CMD [ "npm", "run", "dev" ]

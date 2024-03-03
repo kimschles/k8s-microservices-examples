@@ -1,0 +1,37 @@
+<script>
+    import { onMount } from "svelte";
+    import { PUBLIC_DEV_URL, PUBLIC_K8S_SERVICE_URL } from "$env/static/public";
+
+    let learningResources;
+    onMount(async () => {
+        const response = await fetch(PUBLIC_K8S_SERVICE_URL || PUBLIC_DEV_URL, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            learningResources = data;
+        } else {
+            throw new Error(
+                "Error fetching data from the backend service. Please try again.",
+            );
+        }
+    });
+</script>
+
+{#if learningResources}
+    {#each Object.keys(learningResources) as category}
+        <h1>{category}</h1>
+        {#each learningResources[category] as resource}
+            <a href={resource.link}><h3>{resource.title}</h3></a>
+            <p>by {resource.author}</p>
+            <img src={resource.image_url} alt="" />
+        {/each}
+    {/each}
+{:else}
+    <p>Oops, something went wrong. Please try again.</p>
+{/if}
