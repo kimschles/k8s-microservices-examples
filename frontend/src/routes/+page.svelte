@@ -11,6 +11,9 @@
             },
         });
 
+        console.log("public dev url-", PUBLIC_DEV_URL);
+        console.log("k8s service url-", PUBLIC_K8S_SERVICE_URL);
+
         const data = await response.json();
 
         if (response.ok) {
