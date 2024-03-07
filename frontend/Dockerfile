@@ -1,4 +1,4 @@
-FROM node:21-alpine
+FROM --platform=arm64 node:21-alpine
 
 WORKDIR /usr/src/app
 
@@ -10,8 +10,9 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build
+RUN npm prune --production
 
 EXPOSE 4173
+ENV NODE_ENV=production
 
-CMD [ "npm", "run", "preview" ]
+CMD [ "npm", "run", "start" ]
