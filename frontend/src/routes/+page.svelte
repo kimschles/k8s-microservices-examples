@@ -26,9 +26,10 @@
     });
 </script>
 
+<h1>Go Deeper with Kubernetes</h1>
 {#if learningResources}
     {#each Object.keys(learningResources) as category}
-        <h1>{category}</h1>
+        <h2>{category}</h2>
         {#each learningResources[category] as resource}
             <a href={resource.link}><h3>{resource.title}</h3></a>
             <p>by {resource.author}</p>
@@ -38,3 +39,7 @@
 {:else}
     <p>Oops, something went wrong. Please try again.</p>
 {/if}
+
+<style>
+    @import "./styles.css";
+</style>
