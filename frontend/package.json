@@ -2,9 +2,9 @@
   "name": "frontend",
   "version": "0.0.5",
   "private": true,
-  "scripts": {
+"scripts": {
     "dev": "vite dev",
-    "build": "node build",
+    "build": "vite build",
     "preview": "vite preview",
     "start": "node -r dotenv/config build"
   },
